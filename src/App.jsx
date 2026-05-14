@@ -21,8 +21,11 @@ export default function App() {
               href="https://wa.me/4915567141137"
               target="_blank"
               rel="noreferrer"
+              style={{ textDecoration: "none" }}
             >
-              <button style={styles.button}>💬 Jetzt per WhatsApp anfragen</button>
+              <button style={styles.button}>
+                💬 Jetzt per WhatsApp anfragen
+              </button>
             </a>
 
             <div style={styles.info}>
@@ -34,16 +37,29 @@ export default function App() {
 
           <div style={styles.card}>
             <h2 style={styles.cardTitle}>Fehleranalyse vor Ort</h2>
-            <div style={styles.item}>🔧 Motorsteuergerät prüfen</div>
-            <div style={styles.item}>💧 AdBlue / SCR Analyse</div>
-            <div style={styles.item}>🛑 ABS / EBS Fehlercodes</div>
-            <div style={styles.item}>⚙️ DPF Regeneration starten</div>
+
+            <div style={styles.item}>
+              🔧 Motorsteuergerät prüfen
+            </div>
+
+            <div style={styles.item}>
+              💧 AdBlue / SCR Analyse
+            </div>
+
+            <div style={styles.item}>
+              🛑 ABS / EBS Fehlercodes
+            </div>
+
+            <div style={styles.item}>
+              ⚙️ DPF Regeneration starten
+            </div>
           </div>
         </div>
       </section>
 
       <section style={styles.services}>
         <h2 style={styles.sectionTitle}>Unsere Leistungen</h2>
+
         <div style={styles.line}></div>
 
         <div style={styles.grid}>
@@ -74,7 +90,8 @@ export default function App() {
       </section>
 
       <footer style={styles.footer}>
-        © 2026 Redline Service · Mobile LKW Diagnose · WhatsApp: +49 155 67141137
+        © 2026 Redline Service · Mobile LKW Diagnose · WhatsApp:
+        +49 155 67141137
       </footer>
     </main>
   );
@@ -92,20 +109,21 @@ const styles = {
   hero: {
     minHeight: "760px",
     backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.35)), url('/truck-bg.jpg')",
+      "linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.35)), url('/truck-bg.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center top",
     backgroundRepeat: "no-repeat",
-    padding: "260px 7% 80px",
+    padding: "300px 7% 80px",
   },
 
   content: {
     display: "grid",
-    gridTemplateColumns: "1.1fr 0.9fr",
-    gap: "70px",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "80px",
     maxWidth: "1400px",
     margin: "0 auto",
     alignItems: "center",
+    transform: "translateY(40px)",
   },
 
   left: {
@@ -120,6 +138,7 @@ const styles = {
     fontWeight: "900",
     fontSize: "16px",
     marginBottom: "32px",
+    boxShadow: "0 0 25px rgba(239,17,27,0.5)",
   },
 
   title: {
@@ -149,6 +168,7 @@ const styles = {
     fontSize: "19px",
     fontWeight: "900",
     cursor: "pointer",
+    boxShadow: "0 0 30px rgba(239,17,27,0.45)",
   },
 
   info: {
@@ -183,18 +203,18 @@ const styles = {
 
   services: {
     background: "#050505",
-    padding: "80px 7% 95px",
+    padding: "90px 7%",
     textAlign: "center",
   },
 
   sectionTitle: {
-    fontSize: "48px",
+    fontSize: "52px",
     margin: 0,
     fontWeight: "900",
   },
 
   line: {
-    width: "80px",
+    width: "90px",
     height: "5px",
     background: "#f01822",
     margin: "24px auto 60px",
@@ -202,7 +222,7 @@ const styles = {
   },
 
   grid: {
-    maxWidth: "1250px",
+    maxWidth: "1300px",
     margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
@@ -214,13 +234,13 @@ const styles = {
     border: "1px solid rgba(255,255,255,0.12)",
     borderRadius: "24px",
     padding: "42px 28px",
-    minHeight: "260px",
+    minHeight: "250px",
+    boxShadow: "0 0 30px rgba(0,0,0,0.45)",
   },
 
   icon: {
     fontSize: "50px",
     marginBottom: "20px",
-    color: "#f01822",
   },
 
   footer: {
@@ -229,5 +249,6 @@ const styles = {
     textAlign: "center",
     color: "#aaa",
     background: "#050505",
+    fontSize: "14px",
   },
 };
