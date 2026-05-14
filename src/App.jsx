@@ -37,21 +37,10 @@ export default function App() {
             <h2 style={styles.cardTitle}>Fehleranalyse vor Ort</h2>
 
             <div style={styles.list}>
-              <div style={styles.item}>
-                🔧 Motorsteuergerät prüfen
-              </div>
-
-              <div style={styles.item}>
-                💧 AdBlue / SCR Analyse
-              </div>
-
-              <div style={styles.item}>
-                🚨 ABS / EBS Fehlercodes
-              </div>
-
-              <div style={styles.item}>
-                ⚙️ DPF Regeneration starten
-              </div>
+              <div style={styles.item}>🔧 Motorsteuergerät prüfen</div>
+              <div style={styles.item}>💧 AdBlue / SCR Analyse</div>
+              <div style={styles.item}>🚨 ABS / EBS Fehlercodes</div>
+              <div style={styles.item}>⚙️ DPF Regeneration starten</div>
             </div>
           </div>
         </div>
@@ -109,7 +98,7 @@ const styles = {
     minHeight: "100vh",
     backgroundImage:
       "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.72)), url('/truck-bg.jpg')",
-    backgroundSize: "80%",
+    backgroundSize: "90%",
     backgroundPosition: "center top",
     backgroundRepeat: "no-repeat",
     display: "flex",
@@ -145,9 +134,9 @@ const styles = {
   },
 
   title: {
-    fontSize: "92px",
+    fontSize: "82px",
     lineHeight: "0.95",
-    marginBottom: "24px",
+    marginBottom: "20px",
     fontWeight: "900",
   },
 
@@ -156,22 +145,22 @@ const styles = {
   },
 
   text: {
-    fontSize: "32px",
-    lineHeight: "1.6",
-    maxWidth: "760px",
+    fontSize: "26px",
+    lineHeight: "1.5",
+    maxWidth: "620px",
     color: "#f1f1f1",
-    marginBottom: "40px",
+    marginBottom: "34px",
   },
 
   button: {
     display: "inline-block",
-    background: "#ff1a1a",
+    background: "linear-gradient(135deg,#ff1a1a,#d40000)",
     color: "#fff",
     padding: "18px 34px",
     borderRadius: "16px",
     textDecoration: "none",
     fontWeight: "bold",
-    fontSize: "20px",
+    fontSize: "18px",
     boxShadow: "0 0 30px rgba(255,0,0,0.45)",
     marginBottom: "35px",
   },
