@@ -1,7 +1,7 @@
 import React from "react";
- 
+
 export default function App() {
-  return (  
+  return (
     <main style={styles.page}>
       <section style={styles.hero}>
         <div style={styles.overlay}>
@@ -112,11 +112,12 @@ const styles = {
 
   hero: {
     backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.82)), url('/truck-bg.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center center",
+      "linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.65)), url('/truck-bg.jpg')",
+    backgroundSize: "contain",
+    backgroundPosition: "center top",
     backgroundRepeat: "no-repeat",
-    minHeight: "720px",
+    backgroundColor: "#050505",
+    minHeight: "100vh",
     padding: "70px 7% 110px",
   },
 
