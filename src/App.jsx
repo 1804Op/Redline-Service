@@ -96,48 +96,50 @@ const styles = {
     background: "#050505",
     color: "#ffffff",
     fontFamily: "Arial, sans-serif",
+    overflow: "hidden",
   },
 
   hero: {
     minHeight: "100vh",
     backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.74)), url('/truck-bg.jpg')",
-    backgroundSize: "82%",
+      "linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.72)), url('/truck-bg.jpg')",
+    backgroundSize: "88%",
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     display: "flex",
     alignItems: "center",
-    padding: "0 5%",
+    justifyContent: "center",
+    padding: "0 6%",
   },
 
   overlay: {
     width: "100%",
     maxWidth: "1500px",
-    margin: "0 auto",
     display: "grid",
     gridTemplateColumns: "1fr 420px",
-    gap: "90px",
+    gap: "70px",
     alignItems: "center",
   },
 
   left: {
-    width: "100%",
     maxWidth: "620px",
-    paddingTop: "120px",
+    marginTop: "-20px",
+    marginLeft: "40px",
   },
 
   logo: {
-    width: "650px",
-    marginLeft: "-20px",
-    marginBottom: "30px",
-    filter: "drop-shadow(0 0 25px rgba(255,0,0,0.45))",
+    width: "480px",
+    marginBottom: "10px",
+    marginLeft: "-10px",
+    filter: "drop-shadow(0 0 35px rgba(255,0,0,0.45))",
   },
 
   title: {
     fontSize: "72px",
-    lineHeight: "0.95",
-    marginBottom: "22px",
+    lineHeight: "1",
+    marginBottom: "20px",
     fontWeight: "900",
+    letterSpacing: "-2px",
   },
 
   red: {
@@ -145,72 +147,79 @@ const styles = {
   },
 
   text: {
-    fontSize: "26px",
-    lineHeight: "1.5",
-    maxWidth: "620px",
+    fontSize: "22px",
+    lineHeight: "1.6",
     color: "#f1f1f1",
-    marginBottom: "34px",
+    marginBottom: "32px",
+    maxWidth: "560px",
+    textShadow: "0 0 18px rgba(0,0,0,0.9)",
   },
 
   button: {
     display: "inline-block",
-    background: "linear-gradient(135deg,#ff1a1a,#d40000)",
+    background: "linear-gradient(135deg,#ff1a1a,#c40000)",
     color: "#fff",
     padding: "18px 34px",
-    borderRadius: "16px",
+    borderRadius: "14px",
     textDecoration: "none",
     fontWeight: "bold",
     fontSize: "18px",
     boxShadow: "0 0 30px rgba(255,0,0,0.45)",
     marginBottom: "35px",
+    transition: "0.3s",
   },
 
   infoBox: {
     fontSize: "20px",
     lineHeight: "2",
-    color: "#f1f1f1",
+    color: "#f5f5f5",
+    textShadow: "0 0 10px rgba(0,0,0,0.8)",
   },
 
   card: {
-    background: "rgba(15,15,15,0.88)",
+    background: "rgba(18,18,18,0.82)",
     border: "1px solid rgba(255,255,255,0.12)",
-    borderRadius: "24px",
-    padding: "28px",
-    boxShadow: "0 0 40px rgba(0,0,0,0.8)",
-    backdropFilter: "blur(8px)",
-    maxWidth: "420px",
+    borderRadius: "26px",
+    padding: "26px",
+    backdropFilter: "blur(10px)",
+    boxShadow: "0 0 40px rgba(0,0,0,0.75)",
+    width: "390px",
+    marginTop: "-10px",
   },
 
   cardTitle: {
-    fontSize: "34px",
+    fontSize: "36px",
     marginBottom: "24px",
+    fontWeight: "800",
   },
 
   list: {
     display: "flex",
     flexDirection: "column",
-    gap: "18px",
+    gap: "16px",
   },
 
   item: {
     background: "rgba(255,255,255,0.08)",
     padding: "18px",
-    borderRadius: "16px",
-    color: "#fff",
+    borderRadius: "14px",
+    color: "#ffffff",
     fontWeight: "bold",
     fontSize: "16px",
+    border: "1px solid rgba(255,255,255,0.05)",
   },
 
   services: {
-    padding: "70px 7% 100px",
     background: "#080808",
-    textAlign: "center",
+    padding: "90px 7%",
     marginTop: "-40px",
+    textAlign: "center",
   },
 
   sectionTitle: {
-    fontSize: "58px",
+    fontSize: "56px",
     marginBottom: "18px",
+    fontWeight: "800",
   },
 
   redLine: {
@@ -224,30 +233,32 @@ const styles = {
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
-    gap: "30px",
+    gap: "28px",
     maxWidth: "1400px",
     margin: "0 auto",
   },
 
   serviceCard: {
     background: "#121212",
-    borderRadius: "28px",
-    padding: "40px",
+    borderRadius: "26px",
+    padding: "38px",
     border: "1px solid rgba(255,255,255,0.08)",
     color: "#f1f1f1",
+    transition: "0.3s",
+    boxShadow: "0 0 20px rgba(0,0,0,0.4)",
   },
 
   icon: {
-    fontSize: "56px",
+    fontSize: "54px",
     marginBottom: "20px",
   },
 
   footer: {
     borderTop: "1px solid #222",
-    padding: "30px",
+    padding: "28px",
     textAlign: "center",
-    color: "#999",
-    fontSize: "16px",
+    color: "#888",
+    fontSize: "15px",
     background: "#050505",
   },
 };
