@@ -127,7 +127,8 @@ const styles = {
   },
 
   logo: {
-    width: "420px",
+    width: "650px",
+    marginLeft: "-20px",
     marginBottom: "30px",
     filter: "drop-shadow(0 0 25px rgba(255,0,0,0.45))",
   },
