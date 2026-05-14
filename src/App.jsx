@@ -6,6 +6,7 @@ export default function App() {
       <section style={styles.hero}>
         <div style={styles.overlay}>
           <div style={styles.left}>
+
             <h1 style={styles.title}>
               <span style={styles.red}>Redline</span> Service
             </h1>
@@ -46,7 +47,6 @@ export default function App() {
 
       <section style={styles.services}>
         <h2 style={styles.sectionTitle}>Unsere Leistungen</h2>
-
         <div style={styles.redLine}></div>
 
         <div style={styles.grid}>
@@ -118,6 +118,18 @@ const styles = {
     width: "100%",
     maxWidth: "620px",
     paddingTop: "120px",
+  },
+
+  badge: {
+    display: "inline-block",
+    background: "#ff1a1a",
+    color: "#fff",
+    padding: "10px 18px",
+    borderRadius: "999px",
+    fontSize: "14px",
+    fontWeight: "bold",
+    marginBottom: "24px",
+    boxShadow: "0 0 20px rgba(255,0,0,0.4)",
   },
 
   title: {
