@@ -107,27 +107,26 @@ const styles = {
   },
 
   hero: {
-    minHeight: "760px",
+    minHeight: "820px",
     backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.35)), url('/truck-bg.jpg')",
+      "linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.55)), url('/truck-bg.jpg')",
     backgroundSize: "cover",
-    backgroundPosition: "center top",
+    backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
-    padding: "300px 7% 80px",
+    padding: "340px 8% 100px",
   },
 
   content: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
-    gap: "80px",
-    maxWidth: "1400px",
+    gap: "90px",
+    maxWidth: "1350px",
     margin: "0 auto",
     alignItems: "center",
-    transform: "translateY(40px)",
   },
 
   left: {
-    maxWidth: "680px",
+    maxWidth: "620px",
   },
 
   badge: {
@@ -136,13 +135,13 @@ const styles = {
     padding: "14px 26px",
     borderRadius: "999px",
     fontWeight: "900",
-    fontSize: "16px",
-    marginBottom: "32px",
-    boxShadow: "0 0 25px rgba(239,17,27,0.5)",
+    fontSize: "15px",
+    marginBottom: "28px",
+    boxShadow: "0 0 25px rgba(239,17,27,0.55)",
   },
 
   title: {
-    fontSize: "76px",
+    fontSize: "64px",
     lineHeight: "1",
     margin: "0 0 26px",
     fontWeight: "900",
@@ -153,9 +152,9 @@ const styles = {
   },
 
   text: {
-    fontSize: "24px",
-    lineHeight: "1.55",
-    color: "#f2f2f2",
+    fontSize: "23px",
+    lineHeight: "1.6",
+    color: "#f1f1f1",
     marginBottom: "34px",
   },
 
@@ -163,24 +162,24 @@ const styles = {
     background: "#f01822",
     color: "#fff",
     border: "none",
-    padding: "20px 34px",
+    padding: "20px 36px",
     borderRadius: "16px",
-    fontSize: "19px",
+    fontSize: "18px",
     fontWeight: "900",
     cursor: "pointer",
-    boxShadow: "0 0 30px rgba(239,17,27,0.45)",
+    boxShadow: "0 0 30px rgba(239,17,27,0.5)",
   },
 
   info: {
     marginTop: "34px",
-    fontSize: "19px",
+    fontSize: "18px",
     lineHeight: "1.9",
-    color: "#f4f4f4",
+    color: "#f3f3f3",
   },
 
   card: {
     background: "rgba(15,15,15,0.78)",
-    border: "1px solid rgba(255,255,255,0.16)",
+    border: "1px solid rgba(255,255,255,0.15)",
     borderRadius: "30px",
     padding: "42px",
     backdropFilter: "blur(8px)",
@@ -189,7 +188,8 @@ const styles = {
 
   cardTitle: {
     fontSize: "38px",
-    margin: "0 0 28px",
+    marginBottom: "30px",
+    fontWeight: "900",
   },
 
   item: {
@@ -197,7 +197,7 @@ const styles = {
     borderRadius: "16px",
     padding: "22px",
     marginBottom: "18px",
-    fontSize: "18px",
+    fontSize: "17px",
     fontWeight: "800",
   },
 
@@ -231,7 +231,7 @@ const styles = {
 
   serviceCard: {
     background: "rgba(255,255,255,0.04)",
-    border: "1px solid rgba(255,255,255,0.12)",
+    border: "1px solid rgba(255,255,255,0.1)",
     borderRadius: "24px",
     padding: "42px 28px",
     minHeight: "250px",
@@ -239,7 +239,7 @@ const styles = {
   },
 
   icon: {
-    fontSize: "50px",
+    fontSize: "48px",
     marginBottom: "20px",
   },
 
