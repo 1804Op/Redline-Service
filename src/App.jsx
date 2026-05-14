@@ -27,9 +27,9 @@ export default function App() {
             </a>
 
             <div style={styles.infoBox}>
-              <p>📍 Einsatzgebiet NRW &amp; Umgebung</p>
+              <p>📍 Einsatzgebiet NRW & Umgebung</p>
               <p>📞 +49 155 67141137</p>
-              <p>🚨 Auch Samstag &amp; Sonntag erreichbar</p>
+              <p>🚨 Auch Samstag & Sonntag erreichbar</p>
             </div>
           </div>
 
@@ -37,10 +37,21 @@ export default function App() {
             <h2 style={styles.cardTitle}>Fehleranalyse vor Ort</h2>
 
             <div style={styles.list}>
-              <div style={styles.item}>🔧 Motorsteuergerät prüfen</div>
-              <div style={styles.item}>💧 AdBlue / SCR Analyse</div>
-              <div style={styles.item}>🚨 ABS / EBS Fehlercodes</div>
-              <div style={styles.item}>⚙️ DPF Regeneration starten</div>
+              <div style={styles.item}>
+                🔧 Motorsteuergerät prüfen
+              </div>
+
+              <div style={styles.item}>
+                💧 AdBlue / SCR Analyse
+              </div>
+
+              <div style={styles.item}>
+                🚨 ABS / EBS Fehlercodes
+              </div>
+
+              <div style={styles.item}>
+                ⚙️ DPF Regeneration starten
+              </div>
             </div>
           </div>
         </div>
@@ -48,6 +59,7 @@ export default function App() {
 
       <section style={styles.services}>
         <h2 style={styles.sectionTitle}>Unsere Leistungen</h2>
+
         <div style={styles.redLine}></div>
 
         <div style={styles.grid}>
@@ -66,7 +78,7 @@ export default function App() {
           <div style={styles.serviceCard}>
             <div style={styles.icon}>🛠️</div>
             <h3>Pannenhilfe</h3>
-            <p>Schnelle Unterstützung für Fahrer &amp; Speditionen.</p>
+            <p>Schnelle Unterstützung für Fahrer & Speditionen.</p>
           </div>
 
           <div style={styles.serviceCard}>
@@ -97,8 +109,8 @@ const styles = {
     minHeight: "100vh",
     backgroundImage:
       "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.72)), url('/truck-bg.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center center",
+    backgroundSize: "90%",
+    backgroundPosition: "center top",
     backgroundRepeat: "no-repeat",
     display: "flex",
     alignItems: "center",
