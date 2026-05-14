@@ -6,7 +6,7 @@ export default function App() {
       <section style={styles.hero}>
         <div style={styles.overlay}>
           <div style={styles.left}>
-            <div style={styles.badge}>Mobile LKW Diagnose</div>
+          
 
             <h1 style={styles.title}>
               <span style={styles.red}>Redline</span> Service
