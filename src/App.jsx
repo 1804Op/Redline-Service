@@ -32,9 +32,9 @@ export default function App() {
             </a>
 
             <div style={styles.infoBox}>
-              <p>📍 Einsatzgebiet NRW &amp; Umgebung</p>
+              <p>📍 Einsatzgebiet NRW & Umgebung</p>
               <p>📞 +49 155 67141137</p>
-              <p>⏰ Auch Samstag &amp; Sonntag erreichbar</p>
+              <p>⏰ Auch Samstag & Sonntag erreichbar</p>
             </div>
           </div>
 
@@ -83,7 +83,7 @@ export default function App() {
           <div style={styles.serviceCard}>
             <div style={styles.icon}>🔧</div>
             <h3>Pannenhilfe</h3>
-            <p>Schnelle Unterstützung für Fahrer &amp; Speditionen.</p>
+            <p>Schnelle Unterstützung für Fahrer & Speditionen.</p>
           </div>
 
           <div style={styles.serviceCard}>
@@ -112,13 +112,13 @@ const styles = {
 
   hero: {
     backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.65)), url('/truck-bg.jpg')",
-    backgroundSize: "75%",
+      "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.72)), url('/truck-bg.jpg')",
+    backgroundSize: "78%",
     backgroundPosition: "center top",
     backgroundRepeat: "no-repeat",
     backgroundColor: "#050505",
     minHeight: "100vh",
-    padding: "70px 7% 110px",
+    padding: "40px 7% 110px",
   },
 
   overlay: {
@@ -127,7 +127,8 @@ const styles = {
     gap: "70px",
     maxWidth: "1400px",
     margin: "0 auto",
-    alignItems: "center",
+    alignItems: "start",
+    paddingTop: "80px",
   },
 
   left: {
@@ -135,15 +136,15 @@ const styles = {
   },
 
   logo: {
-    fontSize: "42px",
+    fontSize: "28px",
     fontWeight: "900",
     color: "#ef111b",
-    marginBottom: "45px",
+    marginBottom: "25px",
     letterSpacing: "-1px",
   },
 
   logoSmall: {
-    fontSize: "22px",
+    fontSize: "18px",
     color: "#ffffff",
   },
 
@@ -153,24 +154,25 @@ const styles = {
     color: "#fff",
     padding: "12px 22px",
     borderRadius: "999px",
-    fontSize: "15px",
+    fontSize: "14px",
     fontWeight: "bold",
     marginBottom: "28px",
     boxShadow: "0 0 25px rgba(239,17,27,0.5)",
   },
 
   title: {
-    fontSize: "72px",
+    fontSize: "58px",
     lineHeight: "1",
-    marginBottom: "28px",
+    marginBottom: "22px",
     fontWeight: "900",
+    maxWidth: "520px",
   },
 
   text: {
-    fontSize: "22px",
+    fontSize: "20px",
     color: "#f1f1f1",
     lineHeight: "1.7",
-    maxWidth: "650px",
+    maxWidth: "520px",
   },
 
   link: {
@@ -182,9 +184,9 @@ const styles = {
     background: "#ef111b",
     color: "#fff",
     border: "none",
-    padding: "20px 36px",
+    padding: "18px 34px",
     borderRadius: "18px",
-    fontSize: "18px",
+    fontSize: "17px",
     fontWeight: "900",
     cursor: "pointer",
     boxShadow: "0 0 30px rgba(239,17,27,0.55)",
@@ -198,8 +200,8 @@ const styles = {
   },
 
   card: {
-    background: "rgba(15,15,15,0.86)",
-    border: "1px solid rgba(255,255,255,0.14)",
+    background: "rgba(15,15,15,0.82)",
+    border: "1px solid rgba(255,255,255,0.12)",
     borderRadius: "30px",
     padding: "42px",
     boxShadow: "0 0 45px rgba(0,0,0,0.75)",
@@ -207,8 +209,9 @@ const styles = {
   },
 
   cardTitle: {
-    fontSize: "38px",
+    fontSize: "36px",
     marginBottom: "30px",
+    fontWeight: "800",
   },
 
   list: {
@@ -218,7 +221,7 @@ const styles = {
   },
 
   item: {
-    background: "rgba(255,255,255,0.09)",
+    background: "rgba(255,255,255,0.08)",
     padding: "20px",
     borderRadius: "16px",
     color: "#fff",
@@ -235,10 +238,11 @@ const styles = {
   sectionTitle: {
     fontSize: "48px",
     marginBottom: "10px",
+    fontWeight: "900",
   },
 
   redLine: {
-    width: "80px",
+    width: "90px",
     height: "5px",
     background: "#ef111b",
     margin: "20px auto 60px",
@@ -257,9 +261,10 @@ const styles = {
     background: "rgba(255,255,255,0.04)",
     borderRadius: "26px",
     padding: "40px 30px",
-    border: "1px solid rgba(255,255,255,0.1)",
+    border: "1px solid rgba(255,255,255,0.08)",
     color: "#e8e8e8",
     minHeight: "245px",
+    transition: "0.3s",
   },
 
   icon: {
