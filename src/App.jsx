@@ -2,10 +2,10 @@ import React from "react";
                 <MapPin className="w-5 h-5 text-red-400" />
                 Einsatzgebiet NRW & Umgebung
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-5 h-5 text-red-400" />
-                +49 155 67141137
-              </div>
+   <div className="flex items-center gap-2">
+  <MapPin className="w-5 h-5 text-red-400" />
+  <span>Einsatzgebiet NRW & Umgebung</span>
+</div>
             </div>
           </div>
 
