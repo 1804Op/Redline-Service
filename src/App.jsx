@@ -6,7 +6,11 @@ export default function App() {
       <section style={styles.hero}>
         <div style={styles.overlay}>
           <div style={styles.left}>
-          
+            <img
+              src="/logo.png"
+              alt="Redline Service"
+              style={styles.logo}
+            />
 
             <h1 style={styles.title}>
               <span style={styles.red}>Redline</span> Service
@@ -48,6 +52,7 @@ export default function App() {
 
       <section style={styles.services}>
         <h2 style={styles.sectionTitle}>Unsere Leistungen</h2>
+
         <div style={styles.redLine}></div>
 
         <div style={styles.grid}>
@@ -97,7 +102,7 @@ const styles = {
     minHeight: "100vh",
     backgroundImage:
       "linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.74)), url('/truck-bg.jpg')",
-    backgroundSize: "70%",
+    backgroundSize: "82%",
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     display: "flex",
@@ -121,16 +126,10 @@ const styles = {
     paddingTop: "120px",
   },
 
-  badge: {
-    display: "inline-block",
-    background: "#ff1a1a",
-    color: "#fff",
-    padding: "10px 18px",
-    borderRadius: "999px",
-    fontSize: "14px",
-    fontWeight: "bold",
-    marginBottom: "24px",
-    boxShadow: "0 0 20px rgba(255,0,0,0.4)",
+  logo: {
+    width: "420px",
+    marginBottom: "30px",
+    filter: "drop-shadow(0 0 25px rgba(255,0,0,0.45))",
   },
 
   title: {
