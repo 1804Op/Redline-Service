@@ -8,7 +8,6 @@ import React from "react";
 </div>
             </div>
           </div>
-
           <div className="bg-neutral-900 border border-white/10 rounded-3xl p-8 shadow-2xl">
             <div className="flex items-center justify-between mb-8">
               <div>
@@ -19,12 +18,10 @@ import React from "react";
                   Fehleranalyse vor Ort
                 </h2>
               </div>
-
               <div className="bg-red-600 p-4 rounded-2xl">
                 <Gauge className="w-8 h-8" />
               </div>
             </div>
-
             <div className="space-y-4">
               <div className="bg-white/5 rounded-2xl p-4 flex justify-between">
                 <span>Motorsteuergerät</span>
@@ -44,17 +41,14 @@ import React from "react";
           </div>
         </motion.div>
       </section>
-
       <section className="px-6 py-20 md:px-16 bg-neutral-950">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-black mb-12">
             Unsere Leistungen
           </h2>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => {
               const Icon = service.icon;
-
               return (
                 <motion.div
                   key={index}
