@@ -27,9 +27,9 @@ export default function App() {
             </a>
 
             <div style={styles.infoBox}>
-              <p>📍 Einsatzgebiet NRW & Umgebung</p>
+              <p>📍 Einsatzgebiet NRW &amp; Umgebung</p>
               <p>📞 +49 155 67141137</p>
-              <p>🚨 Auch Samstag & Sonntag erreichbar</p>
+              <p>🚨 Auch Samstag &amp; Sonntag erreichbar</p>
             </div>
           </div>
 
@@ -37,21 +37,10 @@ export default function App() {
             <h2 style={styles.cardTitle}>Fehleranalyse vor Ort</h2>
 
             <div style={styles.list}>
-              <div style={styles.item}>
-                🔧 Motorsteuergerät prüfen
-              </div>
-
-              <div style={styles.item}>
-                💧 AdBlue / SCR Analyse
-              </div>
-
-              <div style={styles.item}>
-                🚨 ABS / EBS Fehlercodes
-              </div>
-
-              <div style={styles.item}>
-                ⚙️ DPF Regeneration starten
-              </div>
+              <div style={styles.item}>🔧 Motorsteuergerät prüfen</div>
+              <div style={styles.item}>💧 AdBlue / SCR Analyse</div>
+              <div style={styles.item}>🚨 ABS / EBS Fehlercodes</div>
+              <div style={styles.item}>⚙️ DPF Regeneration starten</div>
             </div>
           </div>
         </div>
@@ -59,40 +48,31 @@ export default function App() {
 
       <section style={styles.services}>
         <h2 style={styles.sectionTitle}>Unsere Leistungen</h2>
-
         <div style={styles.redLine}></div>
 
         <div style={styles.grid}>
           <div style={styles.serviceCard}>
             <div style={styles.icon}>🔍</div>
             <h3>LKW Diagnose</h3>
-            <p>
-              Fehlercodes auslesen und direkt analysieren.
-            </p>
+            <p>Fehlercodes auslesen und direkt analysieren.</p>
           </div>
 
           <div style={styles.serviceCard}>
             <div style={styles.icon}>💧</div>
             <h3>AdBlue Probleme</h3>
-            <p>
-              Unterstützung bei SCR- und AdBlue-Fehlern.
-            </p>
+            <p>Unterstützung bei SCR- und AdBlue-Fehlern.</p>
           </div>
 
           <div style={styles.serviceCard}>
             <div style={styles.icon}>🛠️</div>
             <h3>Pannenhilfe</h3>
-            <p>
-              Schnelle Unterstützung für Fahrer & Speditionen.
-            </p>
+            <p>Schnelle Unterstützung für Fahrer &amp; Speditionen.</p>
           </div>
 
           <div style={styles.serviceCard}>
             <div style={styles.icon}>⚙️</div>
             <h3>Regeneration</h3>
-            <p>
-              DPF Regeneration und Fehlerbewertung.
-            </p>
+            <p>DPF Regeneration und Fehlerbewertung.</p>
           </div>
         </div>
       </section>
@@ -116,27 +96,28 @@ const styles = {
   hero: {
     minHeight: "100vh",
     backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.7)), url('/truck-bg.jpg')",
+      "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.72)), url('/truck-bg.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     display: "flex",
     alignItems: "center",
-    padding: "0 7%",
+    padding: "0 5%",
   },
 
   overlay: {
     width: "100%",
-    maxWidth: "1400px",
+    maxWidth: "1500px",
     margin: "0 auto",
     display: "grid",
-    gridTemplateColumns: "1fr 520px",
-    gap: "80px",
+    gridTemplateColumns: "1fr 500px",
+    gap: "120px",
     alignItems: "center",
   },
 
   left: {
     width: "100%",
+    maxWidth: "700px",
   },
 
   badge: {
@@ -152,8 +133,8 @@ const styles = {
   },
 
   title: {
-    fontSize: "72px",
-    lineHeight: "1",
+    fontSize: "92px",
+    lineHeight: "0.95",
     marginBottom: "24px",
     fontWeight: "900",
   },
@@ -163,9 +144,9 @@ const styles = {
   },
 
   text: {
-    fontSize: "28px",
+    fontSize: "32px",
     lineHeight: "1.6",
-    maxWidth: "700px",
+    maxWidth: "760px",
     color: "#f1f1f1",
     marginBottom: "40px",
   },
@@ -219,9 +200,10 @@ const styles = {
   },
 
   services: {
-    padding: "100px 7%",
+    padding: "70px 7% 100px",
     background: "#080808",
     textAlign: "center",
+    marginTop: "-40px",
   },
 
   sectionTitle: {
@@ -251,7 +233,6 @@ const styles = {
     padding: "40px",
     border: "1px solid rgba(255,255,255,0.08)",
     color: "#f1f1f1",
-    transition: "0.3s",
   },
 
   icon: {
