@@ -48,7 +48,6 @@ export default function App() {
 
       <section style={styles.services}>
         <h2 style={styles.sectionTitle}>Unsere Leistungen</h2>
-
         <div style={styles.redLine}></div>
 
         <div style={styles.grid}>
@@ -97,9 +96,9 @@ const styles = {
   hero: {
     minHeight: "100vh",
     backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.72)), url('/truck-bg.jpg')",
-    backgroundSize: "90%",
-    backgroundPosition: "center top",
+      "linear-gradient(rgba(0,0,0,0.38), rgba(0,0,0,0.74)), url('/truck-bg.jpg')",
+    backgroundSize: "82%",
+    backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     display: "flex",
     alignItems: "center",
@@ -111,14 +110,15 @@ const styles = {
     maxWidth: "1500px",
     margin: "0 auto",
     display: "grid",
-    gridTemplateColumns: "1fr 500px",
-    gap: "120px",
+    gridTemplateColumns: "1fr 420px",
+    gap: "90px",
     alignItems: "center",
   },
 
   left: {
     width: "100%",
-    maxWidth: "700px",
+    maxWidth: "620px",
+    paddingTop: "120px",
   },
 
   badge: {
@@ -134,9 +134,9 @@ const styles = {
   },
 
   title: {
-    fontSize: "82px",
+    fontSize: "72px",
     lineHeight: "0.95",
-    marginBottom: "20px",
+    marginBottom: "22px",
     fontWeight: "900",
   },
 
