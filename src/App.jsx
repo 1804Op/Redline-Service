@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function App() {
-  return (
+  return ( 
     <main style={styles.page}>
       <section style={styles.hero}>
         <div style={styles.overlay}>
