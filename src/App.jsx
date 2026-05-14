@@ -6,13 +6,7 @@ export default function App() {
       <section style={styles.hero}>
         <div style={styles.overlay}>
           <div style={styles.left}>
-            <div style={styles.logo}>REDLINE SERVICE</div>
-
             <div style={styles.badge}>Mobile LKW Diagnose</div>
-
-            <h1 style={styles.title}>
-              Redline <span style={{ color: "#ef111b" }}>Service</span>
-            </h1>
 
             <p style={styles.text}>
               Mobile Diagnose, Fehleranalyse und schnelle Hilfe für LKW,
@@ -50,38 +44,6 @@ export default function App() {
         </div>
       </section>
 
-      <section style={styles.services}>
-        <h2 style={styles.sectionTitle}>Unsere Leistungen</h2>
-
-        <div style={styles.redLine}></div>
-
-        <div style={styles.grid}>
-          <div style={styles.serviceCard}>
-            <div style={styles.icon}>🔍</div>
-            <h3>LKW Diagnose</h3>
-            <p>Fehlercodes auslesen und direkt analysieren.</p>
-          </div>
-
-          <div style={styles.serviceCard}>
-            <div style={styles.icon}>💧</div>
-            <h3>AdBlue Probleme</h3>
-            <p>Unterstützung bei SCR- und AdBlue-Fehlern.</p>
-          </div>
-
-          <div style={styles.serviceCard}>
-            <div style={styles.icon}>🛠️</div>
-            <h3>Pannenhilfe</h3>
-            <p>Schnelle Unterstützung für Fahrer & Speditionen.</p>
-          </div>
-
-          <div style={styles.serviceCard}>
-            <div style={styles.icon}>⚙️</div>
-            <h3>Regeneration</h3>
-            <p>DPF Regeneration und Fehlerbewertung.</p>
-          </div>
-        </div>
-      </section>
-
       <footer style={styles.footer}>
         © 2026 Redline Service • Mobile LKW Diagnose • WhatsApp:
         +49 155 67141137
@@ -100,9 +62,9 @@ const styles = {
 
   hero: {
     backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.52), rgba(0,0,0,0.82)), url('/truck-bg.jpg')",
-    backgroundSize: "78%",
-    backgroundPosition: "center top",
+      "linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.84)), url('/truck-bg.jpg')",
+    backgroundSize: "92%",
+    backgroundPosition: "78% center",
     backgroundRepeat: "no-repeat",
     backgroundColor: "#050505",
     minHeight: "100vh",
@@ -115,19 +77,12 @@ const styles = {
     gap: "50px",
     maxWidth: "1400px",
     margin: "0 auto",
-    alignItems: "center",
+    alignItems: "start",
   },
 
   left: {
     width: "100%",
-  },
-
-  logo: {
-    fontSize: "22px",
-    fontWeight: "900",
-    color: "#ef111b",
-    marginBottom: "20px",
-    letterSpacing: "-1px",
+    marginTop: "260px",
   },
 
   badge: {
@@ -138,45 +93,37 @@ const styles = {
     borderRadius: "999px",
     fontSize: "14px",
     fontWeight: "bold",
-    marginBottom: "24px",
-    boxShadow: "0 0 20px rgba(255,0,0,0.4)",
-  },
-
-  title: {
-    fontSize: "58px",
-    lineHeight: "1.05",
-    marginBottom: "20px",
-    marginTop: "10px",
-    fontWeight: "900",
-    maxWidth: "520px",
+    marginBottom: "30px",
+    boxShadow: "0 0 20px rgba(255,0,0,0.35)",
   },
 
   text: {
-    fontSize: "22px",
-    color: "#e5e5e5",
-    maxWidth: "650px",
-    lineHeight: "1.6",
+    fontSize: "25px",
+    color: "#f1f1f1",
+    maxWidth: "540px",
+    lineHeight: "1.7",
+    fontWeight: "700",
   },
 
   button: {
-    marginTop: "35px",
+    marginTop: "45px",
     background: "#ef111b",
     color: "#fff",
     border: "none",
-    padding: "18px 34px",
+    padding: "20px 38px",
     borderRadius: "18px",
-    fontSize: "17px",
+    fontSize: "18px",
     fontWeight: "900",
     cursor: "pointer",
     boxShadow: "0 0 18px rgba(239,17,27,0.35)",
   },
 
   infoBox: {
-    marginTop: "32px",
-    fontSize: "18px",
+    marginTop: "34px",
+    fontSize: "19px",
     color: "#f1f1f1",
-    lineHeight: "1.9",
-    fontWeight: "600",
+    lineHeight: "2",
+    fontWeight: "700",
   },
 
   card: {
@@ -186,6 +133,9 @@ const styles = {
     padding: "42px",
     boxShadow: "0 0 45px rgba(0,0,0,0.65)",
     backdropFilter: "blur(10px)",
+    marginTop: "340px",
+    marginLeft: "120px",
+    maxWidth: "520px",
   },
 
   cardTitle: {
@@ -207,48 +157,6 @@ const styles = {
     color: "#fff",
     fontWeight: "bold",
     fontSize: "18px",
-  },
-
-  services: {
-    padding: "90px 7%",
-    background: "#080808",
-    textAlign: "center",
-  },
-
-  sectionTitle: {
-    fontSize: "48px",
-    marginBottom: "20px",
-    fontWeight: "900",
-  },
-
-  redLine: {
-    width: "90px",
-    height: "4px",
-    background: "#ef111b",
-    margin: "0 auto 60px",
-    borderRadius: "999px",
-  },
-
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
-    gap: "25px",
-    maxWidth: "1300px",
-    margin: "0 auto",
-  },
-
-  serviceCard: {
-    background: "#141414",
-    borderRadius: "24px",
-    padding: "35px",
-    border: "1px solid rgba(255,255,255,0.08)",
-    color: "#e8e8e8",
-    transition: "0.3s",
-  },
-
-  icon: {
-    fontSize: "42px",
-    marginBottom: "20px",
   },
 
   footer: {
