@@ -4,9 +4,13 @@ export default function App() {
   return (
     <main style={styles.page}>
       <section style={styles.hero}>
-        <div style={styles.overlay}>
+        <div style={styles.content}>
           <div style={styles.left}>
             <div style={styles.badge}>Mobile LKW Diagnose</div>
+
+            <h1 style={styles.title}>
+              <span style={styles.red}>Redline</span> Service
+            </h1>
 
             <p style={styles.text}>
               Mobile Diagnose, Fehleranalyse und schnelle Hilfe für LKW,
@@ -17,36 +21,60 @@ export default function App() {
               href="https://wa.me/4915567141137"
               target="_blank"
               rel="noreferrer"
-              style={{ textDecoration: "none" }}
             >
-              <button style={styles.button}>
-                💬 Jetzt per WhatsApp anfragen
-              </button>
+              <button style={styles.button}>💬 Jetzt per WhatsApp anfragen</button>
             </a>
 
-            <div style={styles.infoBox}>
-              <p>📍 Einsatzgebiet NRW & Umgebung</p>
+            <div style={styles.info}>
+              <p>📍 Einsatzgebiet NRW &amp; Umgebung</p>
               <p>📞 +49 155 67141137</p>
-              <p>⏰ Auch Samstag & Sonntag erreichbar</p>
+              <p>⏰ Auch Samstag &amp; Sonntag erreichbar</p>
             </div>
           </div>
 
           <div style={styles.card}>
             <h2 style={styles.cardTitle}>Fehleranalyse vor Ort</h2>
+            <div style={styles.item}>🔧 Motorsteuergerät prüfen</div>
+            <div style={styles.item}>💧 AdBlue / SCR Analyse</div>
+            <div style={styles.item}>🛑 ABS / EBS Fehlercodes</div>
+            <div style={styles.item}>⚙️ DPF Regeneration starten</div>
+          </div>
+        </div>
+      </section>
 
-            <div style={styles.list}>
-              <div style={styles.item}>🔧 Motorsteuergerät prüfen</div>
-              <div style={styles.item}>💧 AdBlue / SCR Analyse</div>
-              <div style={styles.item}>🛑 ABS / EBS Fehlercodes</div>
-              <div style={styles.item}>⚙️ DPF Regeneration starten</div>
-            </div>
+      <section style={styles.services}>
+        <h2 style={styles.sectionTitle}>Unsere Leistungen</h2>
+        <div style={styles.line}></div>
+
+        <div style={styles.grid}>
+          <div style={styles.serviceCard}>
+            <div style={styles.icon}>🔍</div>
+            <h3>LKW Diagnose</h3>
+            <p>Fehlercodes auslesen und direkt analysieren.</p>
+          </div>
+
+          <div style={styles.serviceCard}>
+            <div style={styles.icon}>💧</div>
+            <h3>AdBlue Probleme</h3>
+            <p>Unterstützung bei SCR- und AdBlue-Fehlern.</p>
+          </div>
+
+          <div style={styles.serviceCard}>
+            <div style={styles.icon}>🔧</div>
+            <h3>Pannenhilfe</h3>
+            <p>Schnelle Unterstützung für Fahrer &amp; Speditionen.</p>
+          </div>
+
+          <div style={styles.serviceCard}>
+            <div style={styles.icon}>⚙️</div>
+            <h3>Regeneration</h3>
+            <p>DPF Regeneration und Fehlerbewertung.</p>
           </div>
         </div>
       </section>
 
       <footer style={styles.footer}>
-        © 2026 Redline Service • Mobile LKW Diagnose • WhatsApp:
-        +49 155 67141137
+        © 2026 Redline Service · Mobile LKW Diagnose · WhatsApp: +49 155 67141137
       </footer>
     </main>
   );
@@ -54,117 +82,152 @@ export default function App() {
 
 const styles = {
   page: {
+    margin: 0,
     minHeight: "100vh",
-    backgroundColor: "#050505",
-    color: "#ffffff",
+    background: "#030303",
+    color: "#fff",
     fontFamily: "Arial, sans-serif",
   },
 
   hero: {
+    minHeight: "760px",
     backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.84)), url('/truck-bg.jpg')",
-    backgroundSize: "70%",
-    backgroundPosition: "78% center",
+      "linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.35)), url('/truck-bg.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center top",
     backgroundRepeat: "no-repeat",
-    backgroundColor: "#050505",
-    minHeight: "100vh",
-    padding: "40px 7% 110px",
+    padding: "260px 7% 80px",
   },
 
-  overlay: {
+  content: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))",
-    gap: "50px",
+    gridTemplateColumns: "1.1fr 0.9fr",
+    gap: "70px",
     maxWidth: "1400px",
     margin: "0 auto",
-    alignItems: "start",
+    alignItems: "center",
   },
 
   left: {
-    width: "100%",
-    marginTop: "260px",
+    maxWidth: "680px",
   },
 
   badge: {
     display: "inline-block",
-    background: "#ef111b",
-    color: "#fff",
-    padding: "10px 18px",
+    background: "#f01822",
+    padding: "14px 26px",
     borderRadius: "999px",
-    fontSize: "14px",
-    fontWeight: "bold",
-    marginBottom: "30px",
-    boxShadow: "0 0 20px rgba(255,0,0,0.35)",
+    fontWeight: "900",
+    fontSize: "16px",
+    marginBottom: "32px",
+  },
+
+  title: {
+    fontSize: "76px",
+    lineHeight: "1",
+    margin: "0 0 26px",
+    fontWeight: "900",
+  },
+
+  red: {
+    color: "#f01822",
   },
 
   text: {
-    fontSize: "25px",
-    color: "#f1f1f1",
-    maxWidth: "540px",
-    lineHeight: "1.7",
-    fontWeight: "700",
+    fontSize: "24px",
+    lineHeight: "1.55",
+    color: "#f2f2f2",
+    marginBottom: "34px",
   },
 
   button: {
-    marginTop: "45px",
-    background: "#ef111b",
+    background: "#f01822",
     color: "#fff",
     border: "none",
-    padding: "20px 38px",
-    borderRadius: "18px",
-    fontSize: "18px",
+    padding: "20px 34px",
+    borderRadius: "16px",
+    fontSize: "19px",
     fontWeight: "900",
     cursor: "pointer",
-    boxShadow: "0 0 18px rgba(239,17,27,0.35)",
   },
 
-  infoBox: {
+  info: {
     marginTop: "34px",
     fontSize: "19px",
-    color: "#f1f1f1",
-    lineHeight: "2",
-    fontWeight: "700",
+    lineHeight: "1.9",
+    color: "#f4f4f4",
   },
 
   card: {
-    background: "rgba(15,15,15,0.72)",
-    border: "1px solid rgba(255,255,255,0.10)",
+    background: "rgba(15,15,15,0.78)",
+    border: "1px solid rgba(255,255,255,0.16)",
     borderRadius: "30px",
     padding: "42px",
-    boxShadow: "0 0 45px rgba(0,0,0,0.65)",
-    backdropFilter: "blur(10px)",
-    marginTop: "340px",
-    marginLeft: "120px",
-    maxWidth: "520px",
+    backdropFilter: "blur(8px)",
+    boxShadow: "0 0 45px rgba(0,0,0,0.8)",
   },
 
   cardTitle: {
     fontSize: "38px",
-    marginBottom: "30px",
-    fontWeight: "900",
-  },
-
-  list: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "18px",
+    margin: "0 0 28px",
   },
 
   item: {
     background: "rgba(255,255,255,0.08)",
-    padding: "18px",
     borderRadius: "16px",
-    color: "#fff",
-    fontWeight: "bold",
+    padding: "22px",
+    marginBottom: "18px",
     fontSize: "18px",
+    fontWeight: "800",
+  },
+
+  services: {
+    background: "#050505",
+    padding: "80px 7% 95px",
+    textAlign: "center",
+  },
+
+  sectionTitle: {
+    fontSize: "48px",
+    margin: 0,
+    fontWeight: "900",
+  },
+
+  line: {
+    width: "80px",
+    height: "5px",
+    background: "#f01822",
+    margin: "24px auto 60px",
+    borderRadius: "10px",
+  },
+
+  grid: {
+    maxWidth: "1250px",
+    margin: "0 auto",
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+    gap: "28px",
+  },
+
+  serviceCard: {
+    background: "rgba(255,255,255,0.04)",
+    border: "1px solid rgba(255,255,255,0.12)",
+    borderRadius: "24px",
+    padding: "42px 28px",
+    minHeight: "260px",
+  },
+
+  icon: {
+    fontSize: "50px",
+    marginBottom: "20px",
+    color: "#f01822",
   },
 
   footer: {
-    borderTop: "1px solid #222",
-    padding: "30px",
+    borderTop: "2px solid #f01822",
+    padding: "32px",
     textAlign: "center",
-    color: "#888",
-    fontSize: "14px",
+    color: "#aaa",
     background: "#050505",
   },
 };
