@@ -63,7 +63,7 @@ const styles = {
   hero: {
     backgroundImage:
       "linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.84)), url('/truck-bg.jpg')",
-    backgroundSize: "75%",
+    backgroundSize: "70%",
     backgroundPosition: "78% center",
     backgroundRepeat: "no-repeat",
     backgroundColor: "#050505",
