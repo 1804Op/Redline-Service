@@ -2,16 +2,10 @@ import React from "react";
 
 export default function App() {
   return (
-    <main style={styles.page}>
+    <div style={styles.page}>
       <section style={styles.hero}>
         <div style={styles.overlay}>
           <div style={styles.left}>
-            <img
-              src="/logo.png"
-              alt="Redline Service"
-              style={styles.logo}
-            />
-
             <h1 style={styles.title}>
               <span style={styles.red}>Redline</span> Service
             </h1>
@@ -31,9 +25,9 @@ export default function App() {
             </a>
 
             <div style={styles.infoBox}>
-              <p>📍 Einsatzgebiet NRW &amp; Umgebung</p>
-              <p>📞 +49 155 67141137</p>
-              <p>🚨 Auch Samstag &amp; Sonntag erreichbar</p>
+              <div>📍 Einsatzgebiet NRW & Umgebung</div>
+              <div>📞 +49 155 67141137</div>
+              <div>🚨 Auch Samstag & Sonntag erreichbar</div>
             </div>
           </div>
 
@@ -41,10 +35,21 @@ export default function App() {
             <h2 style={styles.cardTitle}>Fehleranalyse vor Ort</h2>
 
             <div style={styles.list}>
-              <div style={styles.item}>🔧 Motorsteuergerät prüfen</div>
-              <div style={styles.item}>💧 AdBlue / SCR Analyse</div>
-              <div style={styles.item}>🚨 ABS / EBS Fehlercodes</div>
-              <div style={styles.item}>⚙️ DPF Regeneration starten</div>
+              <div style={styles.item}>
+                🔧 Motorsteuergerät prüfen
+              </div>
+
+              <div style={styles.item}>
+                💧 AdBlue / SCR Analyse
+              </div>
+
+              <div style={styles.item}>
+                🚨 ABS / EBS Fehlercodes
+              </div>
+
+              <div style={styles.item}>
+                ⚙️ DPF Regeneration starten
+              </div>
             </div>
           </div>
         </div>
@@ -69,9 +74,9 @@ export default function App() {
           </div>
 
           <div style={styles.serviceCard}>
-            <div style={styles.icon}>🛠️</div>
+            <div style={styles.icon}>🔧</div>
             <h3>Pannenhilfe</h3>
-            <p>Schnelle Unterstützung für Fahrer &amp; Speditionen.</p>
+            <p>Schnelle Unterstützung für Fahrer & Speditionen.</p>
           </div>
 
           <div style={styles.serviceCard}>
@@ -86,7 +91,7 @@ export default function App() {
         © 2026 Redline Service • Mobile LKW Diagnose • WhatsApp:
         +49 155 67141137
       </footer>
-    </main>
+    </div>
   );
 }
 
@@ -103,7 +108,7 @@ const styles = {
     minHeight: "100vh",
     backgroundImage:
       "linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.72)), url('/truck-bg.jpg')",
-    backgroundSize: "80%",
+    backgroundSize: "88%",
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     display: "flex",
@@ -125,13 +130,6 @@ const styles = {
     maxWidth: "620px",
     marginTop: "-20px",
     marginLeft: "40px",
-  },
-
-  logo: {
-    width: "480px",
-    marginBottom: "10px",
-    marginLeft: "-10px",
-    filter: "drop-shadow(0 0 35px rgba(255,0,0,0.45))",
   },
 
   title: {
