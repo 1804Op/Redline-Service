@@ -189,11 +189,11 @@ const styles = {
     gap: "18px",
   },
   item: {
-    background: "linear-gradient(90deg, rgba(255,255,255,0.09), rgba(255,255,255,0.04))",
-    padding: "22px",
-    borderRadius: "16px",
-    fontSize: "18px",
-    fontWeight: "700",
+  backgroundImage:
+  "linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.88)), url('./truck-bg.jpg')",
+backgroundSize: "cover",
+backgroundPosition: "center",
+backgroundRepeat: "no-repeat",
   },
   services: {
     background: "linear-gradient(#050505, #0b0b0b)",
