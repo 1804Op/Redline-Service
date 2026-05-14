@@ -27,9 +27,9 @@ export default function App() {
             </a>
 
             <div style={styles.infoBox}>
-              <p>📍 Einsatzgebiet NRW & Umgebung</p>
+              <p>📍 Einsatzgebiet NRW &amp; Umgebung</p>
               <p>📞 +49 155 67141137</p>
-              <p>🚨 Auch Samstag & Sonntag erreichbar</p>
+              <p>🚨 Auch Samstag &amp; Sonntag erreichbar</p>
             </div>
           </div>
 
@@ -78,7 +78,7 @@ export default function App() {
           <div style={styles.serviceCard}>
             <div style={styles.icon}>🛠️</div>
             <h3>Pannenhilfe</h3>
-            <p>Schnelle Unterstützung für Fahrer & Speditionen.</p>
+            <p>Schnelle Unterstützung für Fahrer &amp; Speditionen.</p>
           </div>
 
           <div style={styles.serviceCard}>
@@ -109,7 +109,7 @@ const styles = {
     minHeight: "100vh",
     backgroundImage:
       "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.72)), url('/truck-bg.jpg')",
-    backgroundSize: "80%",
+    backgroundSize: "90%",
     backgroundPosition: "center top",
     backgroundRepeat: "no-repeat",
     display: "flex",
@@ -185,15 +185,16 @@ const styles = {
   card: {
     background: "rgba(15,15,15,0.88)",
     border: "1px solid rgba(255,255,255,0.12)",
-    borderRadius: "28px",
-    padding: "40px",
+    borderRadius: "24px",
+    padding: "28px",
     boxShadow: "0 0 40px rgba(0,0,0,0.8)",
     backdropFilter: "blur(8px)",
+    maxWidth: "420px",
   },
 
   cardTitle: {
-    fontSize: "42px",
-    marginBottom: "30px",
+    fontSize: "34px",
+    marginBottom: "24px",
   },
 
   list: {
@@ -204,11 +205,11 @@ const styles = {
 
   item: {
     background: "rgba(255,255,255,0.08)",
-    padding: "22px",
-    borderRadius: "18px",
+    padding: "18px",
+    borderRadius: "16px",
     color: "#fff",
     fontWeight: "bold",
-    fontSize: "18px",
+    fontSize: "16px",
   },
 
   services: {
