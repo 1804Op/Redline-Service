@@ -2,270 +2,289 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Redline Service – Mobile LKW Diagnose NRW</title>
-  <meta name="description" content="Mobile LKW Diagnose, Fehleranalyse und schnelle Hilfe für Nutzfahrzeuge und Speditionen. NRW & Umgebung. Auch Samstag und Sonntag erreichbar.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Redline Service | Mobile LKW Diagnose NRW</title>
 
   <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    body{
-      background:#000;
-      color:#fff;
-      font-family:Arial, Helvetica, sans-serif;
-      overflow-x:hidden;
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
+      background: #050505;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    .wrapper{
-      width:100%;
-      max-width:650px;
-      margin:auto;
-      padding:40px 28px 80px;
+    body {
+      min-height: 100vh;
     }
 
-    h1{
-      font-size:120px;
-      line-height:0.9;
-      font-weight:900;
-      margin-bottom:40px;
-      letter-spacing:-4px;
+    .page {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 40px 24px;
     }
 
-    .red{
-      color:#ff1a1a;
-      display:block;
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      min-height: 90vh;
     }
 
-    .white{
-      color:#fff;
-      display:block;
+    .headline {
+      font-size: clamp(64px, 10vw, 140px);
+      line-height: 0.88;
+      font-weight: 900;
+      letter-spacing: -4px;
+      margin-bottom: 28px;
     }
 
-    .hero-box{
-      position:relative;
-      width:100%;
-      min-height:720px;
-      border-radius:28px;
-      overflow:hidden;
-      padding:50px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
+    .headline span {
+      display: block;
+    }
+
+    .red {
+      color: #ff1d1d;
+    }
+
+    .subline {
+      font-size: clamp(22px, 3vw, 42px);
+      line-height: 1.25;
+      max-width: 620px;
+      margin-bottom: 32px;
+    }
+
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #ff0000, #ff2b2b);
+      color: #fff;
+      text-decoration: none;
+      font-size: 26px;
+      font-weight: 800;
+      padding: 24px 34px;
+      border-radius: 22px;
+      box-shadow: 0 0 35px rgba(255, 0, 0, 0.35);
+      margin-bottom: 36px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      font-size: 28px;
+      line-height: 1.35;
+    }
+
+    .visual {
+      min-height: 620px;
+      border-radius: 32px;
       background:
-      linear-gradient(to bottom,
-      rgba(0,0,0,0.35),
-      rgba(0,0,0,0.80)),
-      url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
-      box-shadow:0 0 40px rgba(255,0,0,0.15);
+        linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.85)),
+        url("https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1600&auto=format&fit=crop")
+        center / cover no-repeat;
+      box-shadow: 0 0 50px rgba(255,0,0,0.18);
+      position: relative;
+      overflow: hidden;
     }
 
-    .overlay{
-      position:absolute;
-      inset:0;
-      background:linear-gradient(
-      to bottom,
-      rgba(0,0,0,0.15),
-      rgba(0,0,0,0.82)
-      );
+    .visual-badge {
+      position: absolute;
+      left: 28px;
+      bottom: 28px;
+      right: 28px;
+      background: rgba(0,0,0,0.72);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 22px;
+      padding: 24px;
+      font-size: 24px;
+      line-height: 1.35;
     }
 
-    .content{
-      position:relative;
-      z-index:2;
+    .section {
+      margin-top: 80px;
+      padding: 40px;
+      border-radius: 28px;
+      background: #0d0d0d;
+      border: 1px solid rgba(255,255,255,0.08);
     }
 
-    .hero-text{
-      font-size:42px;
-      line-height:1.25;
-      font-weight:500;
-      max-width:90%;
-      margin-top:40px;
-      text-shadow:0 3px 10px rgba(0,0,0,0.7);
+    .section h2 {
+      color: #ff1d1d;
+      font-size: 42px;
+      margin-bottom: 24px;
     }
 
-    .button{
-      position:relative;
-      z-index:2;
-      margin-top:40px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      gap:12px;
-      width:100%;
-      padding:28px 30px;
-      border-radius:26px;
-      text-decoration:none;
-      background:linear-gradient(135deg,#ff0000,#ff2d2d);
-      color:#fff;
-      font-size:34px;
-      font-weight:800;
-      transition:0.3s;
-      box-shadow:0 15px 35px rgba(255,0,0,0.35);
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      font-size: 24px;
     }
 
-    .button:hover{
-      transform:translateY(-3px);
+    .service-box {
+      background: #151515;
+      padding: 22px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.08);
     }
 
-    .infos{
-      position:relative;
-      z-index:2;
-      margin-top:55px;
-      display:flex;
-      flex-direction:column;
-      gap:24px;
-      font-size:30px;
-      line-height:1.4;
+    footer {
+      text-align: center;
+      padding: 50px 20px 20px;
+      color: #888;
+      font-size: 16px;
     }
 
-    .info-item{
-      display:flex;
-      align-items:flex-start;
-      gap:16px;
-    }
-
-    .footer{
-      margin-top:50px;
-      text-align:center;
-      color:#777;
-      font-size:16px;
-    }
-
-    /* ========================= */
-    /* MOBILE OPTIMIERUNG */
-    /* ========================= */
-
-    @media (max-width: 768px){
-
-      .wrapper{
-        padding:28px 18px 60px;
+    @media (max-width: 850px) {
+      .page {
+        padding: 28px 18px;
       }
 
-      h1{
-        font-size:74px;
-        line-height:0.9;
-        letter-spacing:-2px;
-        margin-bottom:28px;
+      .hero {
+        display: block;
+        min-height: auto;
       }
 
-      .hero-box{
-        min-height:auto;
-        padding:28px 22px 34px;
-        border-radius:22px;
+      .headline {
+        font-size: 58px;
+        line-height: 0.92;
+        letter-spacing: -2px;
+        margin-bottom: 24px;
       }
 
-      .hero-text{
-        font-size:26px;
-        line-height:1.35;
-        max-width:100%;
-        margin-top:20px;
+      .subline {
+        font-size: 25px;
+        line-height: 1.35;
+        margin-bottom: 26px;
       }
 
-      .button{
-        margin-top:28px;
-        font-size:24px;
-        padding:22px 16px;
-        border-radius:18px;
+      .whatsapp-btn {
+        width: 100%;
+        font-size: 21px;
+        padding: 20px 16px;
+        border-radius: 18px;
       }
 
-      .infos{
-        margin-top:35px;
-        gap:18px;
-        font-size:22px;
+      .info {
+        font-size: 21px;
+        gap: 14px;
+        margin-bottom: 30px;
       }
 
-      .footer{
-        font-size:14px;
+      .visual {
+        min-height: 360px;
+        border-radius: 24px;
+        margin-top: 26px;
+      }
+
+      .visual-badge {
+        font-size: 18px;
+        padding: 18px;
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+      }
+
+      .section {
+        margin-top: 45px;
+        padding: 24px 18px;
+        border-radius: 22px;
+      }
+
+      .section h2 {
+        font-size: 30px;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+        font-size: 19px;
       }
     }
 
-    @media (max-width: 430px){
-
-      h1{
-        font-size:60px;
+    @media (max-width: 420px) {
+      .headline {
+        font-size: 52px;
       }
 
-      .hero-text{
-        font-size:22px;
+      .subline {
+        font-size: 22px;
       }
 
-      .button{
-        font-size:20px;
-        padding:20px 14px;
-      }
-
-      .infos{
-        font-size:20px;
+      .info {
+        font-size: 19px;
       }
     }
-
   </style>
 </head>
 
 <body>
 
-  <div class="wrapper">
+  <main class="page">
 
-    <h1>
-      <span class="red">Redline</span>
-      <span class="white">Service</span>
-    </h1>
+    <section class="hero">
 
-    <div class="hero-box">
+      <div>
+        <h1 class="headline">
+          <span class="red">Redline</span>
+          <span>Service</span>
+        </h1>
 
-      <div class="overlay"></div>
-
-      <div class="content">
-
-        <div class="hero-text">
+        <p class="subline">
           Mobile Diagnose, Fehleranalyse und schnelle Hilfe für LKW,
           Nutzfahrzeuge und Speditionen.
-        </div>
+        </p>
 
-        <a class="button"
-           href="https://wa.me/4915567141137"
-           target="_blank">
-
+        <a class="whatsapp-btn" href="https://wa.me/4915567141137" target="_blank">
           💬 Jetzt per WhatsApp anfragen
         </a>
 
-        <div class="infos">
-
-          <div class="info-item">
-            📍 Einsatzgebiet NRW & Umgebung
-          </div>
-
-          <div class="info-item">
-            📞 +49 155 67141137
-          </div>
-
-          <div class="info-item">
-            🚨 Auch Samstag & Sonntag erreichbar
-          </div>
-
-          <div class="info-item">
-            🔧 Fehleranalyse • Diagnose • Regeneration • Fehlerspeicher
-          </div>
-
+        <div class="info">
+          <div>📍 Einsatzgebiet NRW & Umgebung</div>
+          <div>📞 +49 155 67141137</div>
+          <div>🚨 Auch Samstag & Sonntag erreichbar</div>
+          <div>🔧 Mobile LKW Diagnose direkt vor Ort</div>
         </div>
-
       </div>
-    </div>
 
-    <div class="footer">
-      Redline Service
-    </div>
+      <div class="visual">
+        <div class="visual-badge">
+          Fehler auslesen · Fehler löschen · Fehleranalyse · Regeneration starten · schnelle Hilfe bei Problemen
+        </div>
+      </div>
 
-  </div>
+    </section>
+
+    <section class="section">
+      <h2>Unsere Leistungen</h2>
+
+      <div class="services">
+        <div class="service-box">✅ LKW Fehlerdiagnose</div>
+        <div class="service-box">✅ Fehlerspeicher auslesen & löschen</div>
+        <div class="service-box">✅ AdBlue / SCR Fehleranalyse</div>
+        <div class="service-box">✅ DPF-Regeneration unterstützen</div>
+        <div class="service-box">✅ ABS / EBS Fehler prüfen</div>
+        <div class="service-box">✅ Schnelle Hilfe für Speditionen</div>
+      </div>
+    </section>
+
+    <footer>
+      Redline Service · Mobile LKW Diagnose NRW
+    </footer>
+
+  </main>
 
 </body>
 </html>
