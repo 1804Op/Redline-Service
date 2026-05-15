@@ -210,6 +210,57 @@ body{
   }
 }
 .footer{
+  <section class="legal">
+
+  <div class="legal-box">
+    <h2>Impressum</h2>
+
+    <p>
+      Redline Service<br>
+      Inhaber: Burak Burbut<br>
+      Ellernbusch 18<br>
+      52355 Düren<br>
+      Deutschland
+    </p>
+
+    <p>
+      Telefon: +49 155 67141137<br>
+      E-Mail: redline.service@outlook.de
+    </p>
+  </div>
+
+  <div class="legal-box">
+    <h2>Datenschutz</h2>
+
+    <p>
+      Verantwortlich für die Datenverarbeitung ist Burak Burbut,
+      Ellernbusch 18, 52355 Düren.
+    </p>
+
+    <p>
+      Beim Besuch dieser Website können technische Daten wie IP-Adresse,
+      Browsertyp, Datum und Uhrzeit des Zugriffs verarbeitet werden.
+      Diese Website wird über Vercel gehostet.
+    </p>
+
+    <p>
+      Bei Kontaktaufnahme per WhatsApp oder E-Mail werden Ihre Angaben
+      ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
+    </p>
+
+    <p>
+      Sie haben das Recht auf Auskunft, Berichtigung, Löschung,
+      Einschränkung der Verarbeitung und Widerspruch gegen die Verarbeitung
+      Ihrer personenbezogenen Daten.
+    </p>
+
+    <p>
+      Sollten rechtliche oder inhaltliche Probleme auffallen, bitten wir um
+      direkte Kontaktaufnahme, damit wir diese schnell prüfen und beheben können.
+    </p>
+  </div>
+
+</section>
   text-align:center;
   padding:35px 20px;
   color:#bdbdbd;
@@ -217,5 +268,31 @@ body{
   border-top:1px solid rgba(255,255,255,0.08);
   font-size:16px;
   margin-top:-40px;
+}
+  .legal{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+  padding:60px 8%;
+  background:#050505;
+}
+
+.legal-box{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:20px;
+  padding:30px;
+  color:#fff;
+}
+
+.legal-box h2{
+  color:#ff1a1a;
+  margin-bottom:20px;
+}
+
+.legal-box p{
+  line-height:1.7;
+  color:#ccc;
+  margin-bottom:15px;
 }
 </style>
