@@ -108,7 +108,7 @@ const styles = {
     minHeight: "100vh",
     backgroundImage:
       "linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.72)), url('/truck-bg.jpg')",
-    backgroundSize: "75%",
+    backgroundSize: "70%",
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     display: "flex",
