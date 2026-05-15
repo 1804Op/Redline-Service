@@ -2,7 +2,7 @@ import React from "react";
 
 export default function App() {
   return (
-    <div style={styles.page}>
+    <main style={styles.page}>
       <section style={styles.hero}>
         <div style={styles.overlay}>
           <div style={styles.left}>
@@ -24,33 +24,20 @@ export default function App() {
               💬 Jetzt per WhatsApp anfragen
             </a>
 
-            <div style={styles.infoBox}>
-              <div>📍 Einsatzgebiet NRW & Umgebung</div>
-              <div>📞 +49 155 67141137</div>
-              <div>🚨 Auch Samstag & Sonntag erreichbar</div>
+            <div style={styles.info}>
+              <p>📍 Einsatzgebiet NRW & Umgebung</p>
+              <p>📞 +49 155 67141137</p>
+              <p>⏰ Auch Samstag & Sonntag erreichbar</p>
             </div>
           </div>
 
           <div style={styles.card}>
             <h2 style={styles.cardTitle}>Fehleranalyse vor Ort</h2>
 
-            <div style={styles.list}>
-              <div style={styles.item}>
-                🔧 Motorsteuergerät prüfen
-              </div>
-
-              <div style={styles.item}>
-                💧 AdBlue / SCR Analyse
-              </div>
-
-              <div style={styles.item}>
-                🚨 ABS / EBS Fehlercodes
-              </div>
-
-              <div style={styles.item}>
-                ⚙️ DPF Regeneration starten
-              </div>
-            </div>
+            <div style={styles.item}>🔧 Motorsteuergerät prüfen</div>
+            <div style={styles.item}>💧 AdBlue / SCR Analyse</div>
+            <div style={styles.item}>🛑 ABS / EBS Fehlercodes</div>
+            <div style={styles.item}>⚙️ DPF Regeneration starten</div>
           </div>
         </div>
       </section>
@@ -91,35 +78,35 @@ export default function App() {
         © 2026 Redline Service • Mobile LKW Diagnose • WhatsApp:
         +49 155 67141137
       </footer>
-    </div>
+    </main>
   );
 }
 
 const styles = {
   page: {
-    minHeight: "100vh",
+    margin: 0,
     background: "#050505",
-    color: "#ffffff",
     fontFamily: "Arial, sans-serif",
-    overflow: "hidden",
+    color: "#fff",
+    overflowX: "hidden",
   },
 
   hero: {
     minHeight: "100vh",
     backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.72)), url('/truck-bg.jpg')",
-    backgroundSize: "72%",
+      "linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.75)), url('/truck-bg.jpg')",
+    backgroundSize: "cover",
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: "0 6%",
+    padding: "60px 7%",
   },
 
   overlay: {
     width: "100%",
-    maxWidth: "1500px",
+    maxWidth: "1400px",
     display: "grid",
     gridTemplateColumns: "1fr 420px",
     gap: "70px",
@@ -127,123 +114,104 @@ const styles = {
   },
 
   left: {
-    maxWidth: "620px",
-    marginTop: "-20px",
-    marginLeft: "40px",
+    maxWidth: "700px",
   },
 
   title: {
-    fontSize: "72px",
-    lineHeight: "1",
-    marginBottom: "20px",
+    fontSize: "82px",
+    lineHeight: 1,
+    marginBottom: "30px",
     fontWeight: "900",
-    letterSpacing: "-2px",
   },
 
   red: {
-    color: "#ff2b2b",
+    color: "#ff2a2a",
   },
 
   text: {
-    fontSize: "22px",
-    lineHeight: "1.6",
-    color: "#f1f1f1",
-    marginBottom: "32px",
-    maxWidth: "560px",
-    textShadow: "0 0 18px rgba(0,0,0,0.9)",
+    fontSize: "28px",
+    lineHeight: 1.5,
+    color: "#f2f2f2",
+    marginBottom: "40px",
+    maxWidth: "750px",
   },
 
   button: {
     display: "inline-block",
-    background: "linear-gradient(135deg,#ff1a1a,#c40000)",
+    background: "#ff2a2a",
     color: "#fff",
-    padding: "18px 34px",
+    padding: "20px 34px",
     borderRadius: "14px",
+    fontSize: "22px",
     textDecoration: "none",
     fontWeight: "bold",
-    fontSize: "18px",
-    boxShadow: "0 0 30px rgba(255,0,0,0.45)",
     marginBottom: "35px",
-    transition: "0.3s",
+    boxShadow: "0 0 25px rgba(255,0,0,0.4)",
   },
 
-  infoBox: {
-    fontSize: "20px",
-    lineHeight: "2",
-    color: "#f5f5f5",
-    textShadow: "0 0 10px rgba(0,0,0,0.8)",
+  info: {
+    fontSize: "22px",
+    lineHeight: 2,
+    color: "#f2f2f2",
   },
 
   card: {
-    background: "rgba(18,18,18,0.82)",
+    background: "rgba(10,10,10,0.82)",
     border: "1px solid rgba(255,255,255,0.12)",
-    borderRadius: "26px",
-    padding: "26px",
-    backdropFilter: "blur(10px)",
-    boxShadow: "0 0 40px rgba(0,0,0,0.75)",
-    width: "390px",
-    marginTop: "-10px",
+    borderRadius: "28px",
+    padding: "35px",
+    backdropFilter: "blur(8px)",
+    boxShadow: "0 0 40px rgba(0,0,0,0.7)",
   },
 
   cardTitle: {
-    fontSize: "36px",
-    marginBottom: "24px",
-    fontWeight: "800",
-  },
-
-  list: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "16px",
+    fontSize: "42px",
+    marginBottom: "30px",
+    fontWeight: "bold",
   },
 
   item: {
     background: "rgba(255,255,255,0.08)",
-    padding: "18px",
-    borderRadius: "14px",
-    color: "#ffffff",
+    padding: "22px",
+    borderRadius: "16px",
+    marginBottom: "18px",
+    fontSize: "20px",
     fontWeight: "bold",
-    fontSize: "16px",
-    border: "1px solid rgba(255,255,255,0.05)",
   },
 
   services: {
-    background: "#080808",
     padding: "90px 7%",
-    marginTop: "-40px",
+    background: "#050505",
     textAlign: "center",
   },
 
   sectionTitle: {
-    fontSize: "56px",
-    marginBottom: "18px",
-    fontWeight: "800",
+    fontSize: "52px",
+    marginBottom: "14px",
   },
 
   redLine: {
     width: "90px",
     height: "5px",
-    background: "#ff1a1a",
-    margin: "0 auto 60px auto",
+    background: "#ff2a2a",
+    margin: "0 auto 60px",
     borderRadius: "999px",
   },
 
   grid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
-    gap: "28px",
-    maxWidth: "1400px",
+    gap: "30px",
+    maxWidth: "1300px",
     margin: "0 auto",
   },
 
   serviceCard: {
-    background: "#121212",
+    background: "rgba(255,255,255,0.04)",
+    border: "1px solid rgba(255,255,255,0.1)",
     borderRadius: "26px",
-    padding: "38px",
-    border: "1px solid rgba(255,255,255,0.08)",
-    color: "#f1f1f1",
-    transition: "0.3s",
-    boxShadow: "0 0 20px rgba(0,0,0,0.4)",
+    padding: "45px 30px",
+    textAlign: "center",
   },
 
   icon: {
@@ -252,11 +220,11 @@ const styles = {
   },
 
   footer: {
-    borderTop: "1px solid #222",
-    padding: "28px",
+    borderTop: "2px solid #ff2a2a",
+    padding: "30px",
     textAlign: "center",
-    color: "#888",
-    fontSize: "15px",
+    color: "#bdbdbd",
     background: "#050505",
+    fontSize: "18px",
   },
 };
